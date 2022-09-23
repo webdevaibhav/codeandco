@@ -1,0 +1,241 @@
+/* Google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+
+* {
+  font-family: "Open Sans", sans-serif;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  
+  list-style: none;
+}
+  /* ------->>Header Section Start<<--------- */
+.header {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+}
+
+.header .navbar {
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 2px 4px 0 rgba(136, 136, 136, 0.5);
+}
+
+.header .navbar .logo {
+  float: left;
+  margin: 12px 0px 12px 40px;
+}
+.header .navbar .logo .logo_img{
+  width: 76px;
+  height: 44px;
+  display: block;
+}
+
+.header .nav_buttons {
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%);
+  margin: 25px 0px 25px 0px;
+}
+.header .nav_list li {
+  float: left;
+  padding: 0px 15px 0px 15px;
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+}
+.nav_list::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.header .cta_btn {
+  float: right;
+  margin: 14px 40px 14px 0px;
+}
+
+.btn{
+  background-color: #2086fb;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 22px;
+  padding: 11px 30px 11px 30px;
+  color: white;
+  cursor: pointer;
+  border: none;
+
+}
+
+.navbar::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* ------->>Header Section End<<--------- */
+
+/* ------->>Main Section Start<<--------- */
+
+.hero .bg_image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 568px;
+  z-index: 1;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.hero  .img_layer {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 568px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.hero .content .hero_title {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.hero .search_field {
+  min-width: 936px;
+  min-height: 64px;
+  background-color: rgb(255, 255, 255, 0.5);
+  padding: 5px 5px 5px 5px;
+  margin-top: 24px;
+  border-radius: 4px;
+  position: relative;
+}
+ .hero .search_field .input_text {
+  font-size: 16px;
+  color: #9b9b9b;
+  position: absolute;
+  border: none;
+  width: 99%;
+  padding: 15px 0px 16px 20px;
+  background-color: #ffffff;
+}
+
+::placeholder {
+  font-size: 16px;
+  color: #9b9b9b;
+}
+
+.hero .search_field .search_icon {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 880px;
+  margin: 16px 20px 16px 0px;
+  cursor: pointer;
+}
+
+/* <----Box Container----> */
+
+.box_container {
+  margin: 40px 14px 0px 14px;
+  padding: 0px 85px
+}
+
+.box_container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.box_container .box {
+  float: left;
+  width: 328px;
+  border: 1px solid #dcdcdc;
+  background-color: #fff;
+}
+
+.box_container .box:nth-child(4n+1){
+border-left:0px;
+}
+.box_container .box:nth-child(4n+4){
+  border-right: 0px;
+}
+
+.box_container .box:nth-child(-n+4){
+  border-top: 0px;
+}
+.box_container .box:nth-child(n+5){
+  border-bottom: 0px;
+}
+
+
+.box_container .box .box_img {
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin: 52px 124px 0px 124px;
+}
+
+.box_container .box .title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #4a4a4a;
+  margin: 24px 0px 0px 0px;
+  text-align: center;
+}
+
+.box_container .box .para {
+  font-size: 16px;
+  color: #858585;
+  line-height: 26px;
+  text-align: center;
+  margin: 10px 32px 60px 32px;
+}
+
+/* ------->>Main Section End<<--------- */
+
+/* ------->>Footer Section Start<<--------- */
+
+.footer .upper_footer {
+margin-top: 32px;
+background-color: #323232;
+text-align: center;
+}
+
+.footer .upper_footer .footer_title{
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+  padding-top: 64px;
+}
+.footer .upper_footer .upper_footer_para{
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  margin-top: 4px;
+}
+.footer .req_chat_btn{
+ margin: 48px 0px 69px 0px;
+}
+
+
+.footer .lower_footer{
+  background-color: #252525;
+}
+
+.footer .lower_footer .lower_footer_para{
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  padding: 25px 0px 24px 40px;
+}
+
+/*  ------->>Footer Section End<<---------  */
